@@ -82,6 +82,13 @@ module BerkeleyLibrary
           end
         end
       end
+
+      describe :default! do
+        it 'sets the defaults' do
+          Config.default!
+          expect(Config.missing).to be_empty
+        end
+      end
     end
   end
 end

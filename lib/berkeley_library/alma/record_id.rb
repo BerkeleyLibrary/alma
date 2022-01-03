@@ -8,7 +8,27 @@ module BerkeleyLibrary
     module RecordId
       include BerkeleyLibrary::Logging
       include BerkeleyLibrary::Util
+      include Comparable
       include Constants
+
+      class << self
+        include Constants
+
+        def parse(id)
+          return id if id.is_a?(RecordId)
+
+          return MMSID.new(id) if ALMA_RECORD_RE =~ id
+          return BibNumber.new(id) if MILLENNIUM_RECORD_RE =~ id
+        end
+      end
+
+      def <=>(other)
+        return 0 if equal?(other)
+        return unless other
+        return unless other.is_a?(RecordId)
+
+        to_s <=> other.to_s
+      end
 
       def marc_uri
         query_string = URI.encode_www_form(

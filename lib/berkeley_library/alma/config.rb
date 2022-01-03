@@ -115,6 +115,13 @@ module BerkeleyLibrary
           raise ArgumentError, "Missing #{self} configuration settings: #{missing_settings.join(', ')}"
         end
 
+        def default!
+          self.alma_sru_host = ENV.fetch('LIT_ALMA_SRU_HOST', 'berkeley.alma.exlibrisgroup.com')
+          self.alma_institution_code = ENV.fetch('LIT_ALMA_INSTITUTION_CODE', '01UCS_BER')
+          self.alma_primo_host = ENV.fetch('LIT_ALMA_PRIMO_HOST', 'search.library.berkeley.edu')
+          self.alma_permalink_key = ENV.fetch('LIT_ALMA_PERMALINK_KEY', 'iqob43')
+        end
+
         private
 
         def sru_base_uri_for(domain, inst_code)
