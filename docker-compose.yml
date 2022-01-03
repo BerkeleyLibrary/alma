@@ -12,4 +12,4 @@ services:
       # files ignored in .dockerignore when building the image)
       - ./:/opt/app
 
-version: "3.7"
+version: "3.8"
