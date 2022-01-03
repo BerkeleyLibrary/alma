@@ -1,6 +1,1 @@
-module BerkeleyLibrary
-  module Alma
-    module Lookup
-    end
-  end
-end
+Dir.glob(File.expand_path('lookup/*.rb', __dir__)).each(&method(:require))
