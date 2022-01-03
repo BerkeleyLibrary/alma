@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.2</version>
+  <numberOfRecords>1</numberOfRecords>
+  <records>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>01878ngm a2200433Ii 4500</leader>
+          <controlfield tag="001">991054360089706532</controlfield>
+          <controlfield tag="005">20210907131249.0</controlfield>
+          <controlfield tag="006">m     o  c</controlfield>
+          <controlfield tag="007">cr cna||||||||</controlfield>
+          <controlfield tag="007">vz czazuu</controlfield>
+          <controlfield tag="008">200909r20201987nyu026        o   vleng d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b257169738-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(OCoLC)1194005144</subfield>
+            <subfield code="9">ExL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(EXLNZ-01UCS_NETWORK)9913535785806531</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="040">
+            <subfield code="a">CUY</subfield>
+            <subfield code="b">eng</subfield>
+            <subfield code="e">rda</subfield>
+            <subfield code="e">pn</subfield>
+            <subfield code="c">CUY</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="043">
+            <subfield code="a">u-at---</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="4" tag="050">
+            <subfield code="a">PN1997</subfield>
+            <subfield code="b">.N5115 1987</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">Nice colored girls.</subfield>
+          </datafield>
+          <datafield ind1="3" ind2="3" tag="246">
+            <subfield code="a">Nice coloured girls</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="1" tag="264">
+            <subfield code="a">New York, NY :</subfield>
+            <subfield code="b">Women Make Movies,</subfield>
+            <subfield code="c">1987.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 online resource (26 min.) :</subfield>
+            <subfield code="b">sound, color</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="336">
+            <subfield code="a">two-dimensional moving image</subfield>
+            <subfield code="b">tdi</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="337">
+            <subfield code="a">computer</subfield>
+            <subfield code="b">c</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="338">
+            <subfield code="a">online resource</subfield>
+            <subfield code="b">cr</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="344">
+            <subfield code="a">digital</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="347">
+            <subfield code="a">Video file 2 rda</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">Title on container: Nice colored girls.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">"Made with assistance of the Women's Film Fund and Australian Film Commission."</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="508">
+            <subfield code="a">Producer, director, writer, Tracey Moffatt ; voiceovers, Ralph Cotterill.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="511">
+            <subfield code="a">Gayle Mabo, Cheryl Pitt, Janelle Court, Fiona George, Lindsay McCorrmack.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="520">
+            <subfield code="a">In this film excerpts from 16th century sailor's journals concerning sexual exploitation of native Australian women are transposed over current day scenes of prostitution trade among aboriginal native women.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="533">
+            <subfield code="a">Electronic reproduction.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="588">
+            <subfield code="a">Description based on online resources.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="0" tag="650">
+            <subfield code="a">Prostitution</subfield>
+            <subfield code="z">Australia.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="0" tag="650">
+            <subfield code="a">Women</subfield>
+            <subfield code="z">Australia</subfield>
+            <subfield code="x">Social conditions.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="0" tag="650">
+            <subfield code="a">Aboriginal Australians</subfield>
+            <subfield code="x">Social conditions.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Moffatt, Tracey,</subfield>
+            <subfield code="e">Producer,</subfield>
+            <subfield code="e">director,</subfield>
+            <subfield code="e">writer.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Cotterill, Ralph,</subfield>
+            <subfield code="d">1941-</subfield>
+            <subfield code="e">voiceovers.</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">Women Make Movies (Firm)</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="8" tag="776">
+            <subfield code="i">videocassette version:</subfield>
+            <subfield code="t">Nice coloured girls.</subfield>
+            <subfield code="d">New York, NY : Women Make Movies, 1987</subfield>
+            <subfield code="w">(OCoLC)28727597</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="953">
+            <subfield code="a">Tier 3</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="955">
+            <subfield code="a">20200817</subfield>
+            <subfield code="b">LSO MAD</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="955">
+            <subfield code="a">20200904</subfield>
+            <subfield code="b">tsgy</subfield>
+            <subfield code="c">CO</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1="4" ind2="0" tag="956">
+            <subfield code="x">MAD</subfield>
+            <subfield code="z">UCB Access.</subfield>
+            <subfield code="u">https://avplayer.lib.berkeley.edu/Video-UCBOnly-MRC/b25716973</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="993">
+            <subfield code="a">20201204 migrate this bib; has wb order syep</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="993">
+            <subfield code="a">20210216 Migration order records with 856s. sydr</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b257169738</subfield>
+            <subfield code="b">Updated: 02-28-21</subfield>
+            <subfield code="c">Created: 08-19-20</subfield>
+            <subfield code="d">CatDate: 09-09-20</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="998">
+            <subfield code="g">Nice Colored Girls.mp4</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVE">
+            <subfield code="8">531000928070006532</subfield>
+            <subfield code="e">Available</subfield>
+            <subfield code="n">UCB Access.</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991054360089706532</recordIdentifier>
+      <recordPosition>1</recordPosition>
+    </record>
+  </records>
+  <extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+    <xb:exact>true</xb:exact>
+    <xb:responseDate>2021-10-20T11:49:34-0700</xb:responseDate>
+  </extraResponseData>
+</searchRetrieveResponse>

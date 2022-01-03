@@ -27,3 +27,30 @@ end
 # Code under test
 
 require 'berkeley_library/alma'
+
+# ------------------------------------------------------------
+# Utility methods
+
+def sru_url_for(record_id)
+  sru_url_base = 'https://berkeley.alma.exlibrisgroup.com/view/sru/01UCS_BER?version=1.2&operation=searchRetrieve&query='
+
+  if BerkeleyLibrary::Alma::Constants::ALMA_RECORD_RE =~ record_id
+    "#{sru_url_base}alma.mms_id%3D#{record_id}"
+  elsif BerkeleyLibrary::Alma::Constants::MILLENNIUM_RECORD_RE =~ record_id
+    full_bib_number = BerkeleyLibrary::Alma::BibNumber.new(record_id).to_s
+    "#{sru_url_base}alma.other_system_number%3DUCB-#{full_bib_number}-01ucs_ber"
+  else
+    raise ArgumentError, "Unknown record ID type: #{record_id}"
+  end
+end
+
+def sru_data_path_for(record_id)
+  "spec/data/#{record_id}-sru.xml"
+end
+
+def stub_sru_request(record_id)
+  sru_url = sru_url_for(record_id)
+  marc_xml_path = sru_data_path_for(record_id)
+
+  stub_request(:get, sru_url).to_return(status: 200, body: File.read(marc_xml_path))
+end

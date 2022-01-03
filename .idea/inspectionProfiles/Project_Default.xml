@@ -13,11 +13,13 @@
     <inspection_tool class="RubyMismatchedArgumentType" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="myCheckNilability" value="false" />
     </inspection_tool>
+    <inspection_tool class="RubyNilAnalysis" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="RubyStringKeysInHashInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
       <option name="processCode" value="true" />
       <option name="processLiterals" value="true" />
       <option name="processComments" value="true" />
     </inspection_tool>
+    <inspection_tool class="XmlHighlighting" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>

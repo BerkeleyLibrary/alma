@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.2</version>
+  <numberOfRecords>1</numberOfRecords>
+  <records>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>01315nmm a2200301 a 4500</leader>
+          <controlfield tag="001">991038544199706532</controlfield>
+          <controlfield tag="005">20210907141950.0</controlfield>
+          <controlfield tag="007">cr mn-</controlfield>
+          <controlfield tag="008">981030p19981953cau        d        eng d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b110824349-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(OCoLC)40197531</subfield>
+            <subfield code="9">ExL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(EXLNZ-01UCS_NETWORK)9915050791506531</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="040">
+            <subfield code="a">CUY</subfield>
+            <subfield code="c">CUY</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">Online audio recordings.</subfield>
+            <subfield code="p">Robert Frost: Poetry reading, November 8, 1953</subfield>
+            <subfield code="h">[electronic resource]</subfield>
+          </datafield>
+          <datafield ind1="3" ind2="0" tag="246">
+            <subfield code="a">Robert Frost: Poetry reading, November 8, 1953</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="246">
+            <subfield code="i">Spoken title:</subfield>
+            <subfield code="a">Free symbols of poetry</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="260">
+            <subfield code="c">1998.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">"A collaborative project between the Berkeley Language Center and the Media Resources Center, Moffitt Library"--MRC Web homepage.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">Title from homepage screen.</subfield>
+          </datafield>
+          <datafield ind1="0" ind2=" " tag="505">
+            <subfield code="a">1. Introduction and program (29 min.) -- 2. Program (62 min.)</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="520">
+            <subfield code="a">The poet Robert Frost reads from his poems and provides commentary about symbolism in poetry.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="534">
+            <subfield code="p">Sound cassette:</subfield>
+            <subfield code="l">Berkeley Language Center, Speech Archive SA 1459</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="538">
+            <subfield code="a">Mode of access: World Wide Web.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="590">
+            <subfield code="a">AVMC; SOUND/D 29: Original source discs under call no.: SOUND/D 29 AVMC</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="590">
+            <subfield code="a">WEB; No call number: Check Website for holdings</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="0" tag="650">
+            <subfield code="a">Poetics.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="0" tag="650">
+            <subfield code="a">Symbolism in literature.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Frost, Robert,</subfield>
+            <subfield code="d">1874-1963.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Frost, Robert,</subfield>
+            <subfield code="d">1874-1963.</subfield>
+            <subfield code="t">Poems.</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">University of California, Berkeley.</subfield>
+            <subfield code="b">Language Laboratory.</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">Moffitt Library.</subfield>
+            <subfield code="b">Media Resources Center.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="955">
+            <subfield code="a">20150210</subfield>
+            <subfield code="b">MRC Audio Files Berkeley edu_ram_20141210.xls</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1="4" ind2="0" tag="956">
+            <subfield code="z">MRC online audio. Freely available.</subfield>
+            <subfield code="u">https://avplayer.lib.berkeley.edu/MRCAudio/b11082434</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="968">
+            <subfield code="a">Reclvl: f Addate: 981030 Addid: SMI Moddate: 080603 Modid: XRF</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1="0" ind2=" " tag="973">
+            <subfield code="a">MRC online audio.</subfield>
+            <subfield code="5">CU</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="e">GLADN151769328</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b110824349</subfield>
+            <subfield code="b">Updated: 02-02-20</subfield>
+            <subfield code="c">Created: 03-17-09</subfield>
+            <subfield code="d">CatDate: 10-30-98</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="998">
+            <subfield code="a">01:02:29</subfield>
+            <subfield code="t">Part 1</subfield>
+            <subfield code="g">frost-read1.mp3</subfield>
+            <subfield code="a">00:28:58</subfield>
+            <subfield code="t">Part 2</subfield>
+            <subfield code="g">frost-read2.mp3</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991038544199706532</subfield>
+            <subfield code="8">22771096050006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">NRLF</subfield>
+            <subfield code="c">Media Resources Center (NRLF)</subfield>
+            <subfield code="d">SOUND/D 29</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">2</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">nbmcr</subfield>
+            <subfield code="k">0</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Northern Regional Library Facility</subfield>
+            <subfield code="t">disc 1-2</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVE">
+            <subfield code="8">53999373990006532</subfield>
+            <subfield code="e">Available</subfield>
+            <subfield code="n">MRC online audio. Freely available.</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991038544199706532</recordIdentifier>
+      <recordPosition>1</recordPosition>
+    </record>
+  </records>
+  <extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+    <xb:exact>true</xb:exact>
+    <xb:responseDate>2021-10-21T14:58:59-0700</xb:responseDate>
+  </extraResponseData>
+</searchRetrieveResponse>
