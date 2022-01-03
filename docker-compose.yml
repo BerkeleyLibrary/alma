@@ -1,0 +1,15 @@
+services:
+  gem:
+    build:
+      context: .
+      target: development
+    ports:
+      - target: 3000
+        published: 3000
+    restart: always
+    volumes:
+      # Note that this mounts the *entire* repo directory (including
+      # files ignored in .dockerignore when building the image)
+      - ./:/opt/app
+
+version: "3.7"

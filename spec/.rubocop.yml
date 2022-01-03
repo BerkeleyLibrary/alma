@@ -1,0 +1,37 @@
+inherit_from: ../.rubocop.yml
+
+AllCops:
+  # Exclude generated files
+  Exclude:
+    - 'suite/**/*'
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+############################################################
+# Added in Rubocop 0.89
+
+# Sometimes we're testing the operator
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: false
