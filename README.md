@@ -21,10 +21,10 @@ To look up a single ID:
 echo b11082434 | bin/alma-mms-lookup
 ```
 
-To look up a list of IDs given in a file:
+To look up a list of IDs given in a file `record-ids.txt`:
 
 ```sh
-cat record-ids.txt | bin/alma-mms-lookup
+bin/alma-mms-lookup < record-ids.txt
 ```
 
 ### Execution via Docker
@@ -32,13 +32,13 @@ cat record-ids.txt | bin/alma-mms-lookup
 To look up a single ID:
 
 ```sh
-echo b11082434 | docker compose run gem bin/alma-mms-lookup
+echo b11082434 | docker compose run gem bin/alma-mms-lookup 
 ```
 
-To look up a list of IDs given in a file:
+To look up a list of IDs given in a file `record-ids.txt`:
 
 ```sh
-cat record-ids.txt | docker compose run gem bin/alma-mms-lookup
+docker compose run gem bin/alma-mms-lookup < record-ids.txt
 ```
 
 ### Output format
