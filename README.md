@@ -1,5 +1,8 @@
 # BerkeleyLibrary::Alma
 
+[![Build Status](https://github.com/BerkeleyLibrary/alma/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/BerkeleyLibrary/alma/actions/workflows/build.yml)
+[![Gem Version](https://img.shields.io/gem/v/berkeley_library-alma.svg)](https://rubygems.org/gems/berkeley_library-alma)
+
 A utility gem for working with Alma / Primo.
 
 ## Configuration
