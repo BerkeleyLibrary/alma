@@ -3,15 +3,15 @@ require 'berkeley_library/util/uris'
 module BerkeleyLibrary
   module Alma
     class Config
+      ALL_SETTINGS = %i[
+        alma_sru_host
+        alma_primo_host
+        alma_institution_code
+        alma_permalink_key
+      ].freeze
+
       class << self
         include BerkeleyLibrary::Util
-
-        ALL_SETTINGS = %i[
-          alma_sru_host
-          alma_primo_host
-          alma_institution_code
-          alma_permalink_key
-        ].freeze
 
         # Alma SRU hostname, e.g. UC Berkeley = berkeley.alma.exlibrisgroup.com
         def alma_sru_host
@@ -29,7 +29,8 @@ module BerkeleyLibrary
         end
 
         # View state key to use when generating Alma permalinks, e.g. `iqob43`; see
-        # https://knowledge.exlibrisgroup.com/Primo/Knowledge_Articles/What_is_the_key_in_short_permalinks%3F
+        # [What is the key in short permalinks?](https://knowledge.exlibrisgroup.com/Primo/Knowledge_Articles/What_is_the_key_in_short_permalinks%3F)
+        # in the documentation
         def alma_permalink_key
           @alma_permalink_key ||= value_from_rails_config(:alma_permalink_key)
         end
@@ -116,10 +117,12 @@ module BerkeleyLibrary
         end
 
         def default!
-          self.alma_sru_host = ENV.fetch('LIT_ALMA_SRU_HOST', 'berkeley.alma.exlibrisgroup.com')
-          self.alma_institution_code = ENV.fetch('LIT_ALMA_INSTITUTION_CODE', '01UCS_BER')
-          self.alma_primo_host = ENV.fetch('LIT_ALMA_PRIMO_HOST', 'search.library.berkeley.edu')
-          self.alma_permalink_key = ENV.fetch('LIT_ALMA_PERMALINK_KEY', 'iqob43')
+          BerkeleyLibrary::Alma.configure do
+            config.alma_sru_host = ENV.fetch('LIT_ALMA_SRU_HOST', 'berkeley.alma.exlibrisgroup.com')
+            config.alma_institution_code = ENV.fetch('LIT_ALMA_INSTITUTION_CODE', '01UCS_BER')
+            config.alma_primo_host = ENV.fetch('LIT_ALMA_PRIMO_HOST', 'search.library.berkeley.edu')
+            config.alma_permalink_key = ENV.fetch('LIT_ALMA_PERMALINK_KEY', 'iqob43')
+          end
         end
 
         private

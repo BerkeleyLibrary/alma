@@ -5,10 +5,10 @@ module BerkeleyLibrary
     describe MMSID do
       before(:each) do
         BerkeleyLibrary::Alma.configure do
-          config.alma_sru_host = 'berkeley.alma.exlibrisgroup.com'
-          config.alma_institution_code = '01UCS_BER'
-          config.alma_primo_host = 'search.library.berkeley.edu'
-          config.alma_permalink_key = 'iqob43'
+          Config.alma_sru_host = 'berkeley.alma.exlibrisgroup.com'
+          Config.alma_institution_code = '01UCS_BER'
+          Config.alma_primo_host = 'search.library.berkeley.edu'
+          Config.alma_permalink_key = 'iqob43'
         end
       end
 

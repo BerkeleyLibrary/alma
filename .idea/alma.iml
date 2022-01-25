@@ -89,6 +89,8 @@
     <orderEntry type="library" scope="PROVIDED" name="unf_ext (v0.0.8, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.1.0, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webmock (v3.14.0, RVM: ruby-3.0.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webrick (v1.7.0, RVM: ruby-3.0.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="yard (v0.9.27, RVM: ruby-3.0.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.5.1, RVM: ruby-3.0.2) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

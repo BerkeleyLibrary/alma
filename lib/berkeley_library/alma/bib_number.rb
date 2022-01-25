@@ -2,24 +2,62 @@ require 'berkeley_library/alma/record_id'
 
 module BerkeleyLibrary
   module Alma
+    # {RecordId} subclass representing a Millennium bib number.
     class BibNumber
       include RecordId
 
+      # ------------------------------------------------------------
+      # Accessors
+
+      # @return [String] the numeric part of the bib number, excluding check digit, as a string
       attr_reader :digit_str
+
+      # @return [String] the check digit of the bib number, as a string
       attr_reader :check_str
 
+      # ------------------------------------------------------------
+      # Initializer
+
+      # Initializes a new {BibNumber} from the specified string.
+      #
+      # @param [String] bib_number The bib number, with or without check digit
+      # @raise [ArgumentError] if the specified string is not an 8- or 9-digit bib number,
+      #        or if a 9-digit bib number has an incorrect check digit
       def initialize(bib_number)
         @digit_str, @check_str = split_bib(bib_number)
       end
 
-      def to_s
+      # ------------------------------------------------------------
+      # Instance methods
+
+      # Returns the full bib number, including the correct check digit, as a string.
+      #
+      # @return [String] the bib number, as a string
+      def full_bib
         "b#{digit_str}#{check_str}"
       end
 
+      # Returns the full bib number, including the correct check digit, as a string.
+      #
+      # @return [String] the bib number, as a string
+      def to_s
+        full_bib
+      end
+
+      # Returns the SRU query value for this MMS ID.
+      #
+      # Note that currently only UC Berkeley bib numbers (encoded `UCB-bXXXXXXXXX`)
+      # are supported.
+      #
+      # @return [String] the SRU query value
       def sru_query_value
-        other_system_number = "UCB-#{self}-#{config.alma_institution_code.downcase}"
+        # TODO: stop hard-coding `UCB-`
+        other_system_number = "UCB-#{self}-#{Config.alma_institution_code.downcase}"
         "alma.other_system_number=#{other_system_number}"
       end
+
+      # ------------------------------------------------------------
+      # Private methods
 
       private
 
