@@ -2,7 +2,7 @@ File.expand_path('lib', __dir__).tap do |lib|
   $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 end
 
-ruby_version = '>= 3.0'
+ruby_version = '>= 2.7'
 
 require 'berkeley_library/alma/module_info'
 
