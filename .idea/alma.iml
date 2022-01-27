@@ -18,7 +18,7 @@
     <orderEntry type="library" scope="PROVIDED" name="amazing_print (v1.4.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="berkeley_library-logging (v0.2.5, RVM: ruby-2.7.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="berkeley_library-marc (v0.2.1, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="berkeley_library-marc (v0.3.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="berkeley_library-util (v0.1.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundle-audit (v0.1.0, RVM: ruby-2.7.5) [gem]" level="application" />
@@ -37,7 +37,7 @@
     <orderEntry type="library" scope="PROVIDED" name="hashdiff (v1.0.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-accept (v1.7.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="http-cookie (v1.0.4, RVM: ruby-2.7.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.11, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.9.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lograge (v0.11.2, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.13.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marc (v1.1.1, RVM: ruby-2.7.5) [gem]" level="application" />
@@ -107,7 +107,7 @@
           </RakeTaskImpl>
           <RakeTaskImpl description="Run all specs in spec directory, with coverage" fullCommand="coverage" id="coverage" />
           <RakeTaskImpl description="Run tests, check test coverage, check code style, check for vulnerabilities, build gem" fullCommand="default" id="default" />
-          <RakeTaskImpl description="Build berkeley_library-alma.gemspec as berkeley_library-alma-0.0.1.gem" fullCommand="gem" id="gem" />
+          <RakeTaskImpl description="Build berkeley_library-alma.gemspec as berkeley_library-alma-0.0.2.gem" fullCommand="gem" id="gem" />
           <RakeTaskImpl description="Run RuboCop with auto-correct, and output results to console" fullCommand="ra" id="ra" />
           <RakeTaskImpl description="Run rubocop with HTML output" fullCommand="rubocop" id="rubocop" />
           <RakeTaskImpl id="rubocop">
