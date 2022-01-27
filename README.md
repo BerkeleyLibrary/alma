@@ -5,6 +5,20 @@
 
 A utility gem for working with Alma / Primo.
 
+## Installation
+
+In your Gemfile:
+
+```ruby
+gem 'berkeley_library-alma'
+```
+
+In your code:
+
+```ruby
+require 'berkeley_library/alma'
+```
+
 ## Configuration
 
 The `BerkeleyLibrary::Alma::Config` class includes the options below. These
