@@ -1,7 +1,7 @@
 # =============================================================================
 # Target: base
 
-FROM ruby:3.0.2-alpine AS base
+FROM ruby:2.7.5-alpine AS base
 
 RUN apk --no-cache --update upgrade && \
     apk --no-cache add \
