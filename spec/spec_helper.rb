@@ -38,7 +38,7 @@ def sru_url_for(record_id)
     "#{sru_url_base}alma.mms_id%3D#{record_id}"
   elsif BerkeleyLibrary::Alma::Constants::MILLENNIUM_RECORD_RE =~ record_id
     full_bib_number = BerkeleyLibrary::Alma::BibNumber.new(record_id).to_s
-    "#{sru_url_base}alma.other_system_number%3DUCB-#{full_bib_number}-01ucs_ber"
+    "#{sru_url_base}alma.local_field_996%3D#{full_bib_number}"
   else
     raise ArgumentError, "Unknown record ID type: #{record_id}"
   end

@@ -40,6 +40,14 @@ module BerkeleyLibrary
           end
         end
 
+        it 'accepts an upper-case B, but treats it as lower case' do
+          raw_bib = 'B11082434'
+          expected_bib = 'b110824349'
+          bib_number = BibNumber.new(raw_bib)
+          expect(bib_number.full_bib).to eq(expected_bib)
+          expect(bib_number.to_s).to eq(expected_bib)
+        end
+
         it 'produces the expected check digit' do
           aggregate_failures do
             expected_check_digits_by_bib.each do |bib_expected, cd_expected|

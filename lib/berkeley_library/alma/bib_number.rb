@@ -18,7 +18,8 @@ module BerkeleyLibrary
       # ------------------------------------------------------------
       # Initializer
 
-      # Initializes a new {BibNumber} from the specified string.
+      # Initializes a new {BibNumber} from the specified string. Note that a bib number
+      # may start with an upper-case B, but it will be converted to lower case.
       #
       # @param [String] bib_number The bib number, with or without check digit
       # @raise [ArgumentError] if the specified string is not an 8- or 9-digit bib number,
@@ -51,9 +52,7 @@ module BerkeleyLibrary
       #
       # @return [String] the SRU query value
       def sru_query_value
-        # TODO: stop hard-coding `UCB-`
-        other_system_number = "UCB-#{self}-#{Config.alma_institution_code.downcase}"
-        "alma.other_system_number=#{other_system_number}"
+        "alma.local_field_996=#{full_bib}"
       end
 
       # ------------------------------------------------------------
