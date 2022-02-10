@@ -25,9 +25,7 @@ require 'berkeley_library/alma'
 # Configuration
 
 # Configure Alma URLs etc.
-BerkeleyLibrary::Alma.configure do
-  Config.default!
-end
+BerkeleyLibrary::Alma::Config.default!
 
 # Set log level
 BerkeleyLibrary::Logging.logger.level = Logger::Severity::WARN
