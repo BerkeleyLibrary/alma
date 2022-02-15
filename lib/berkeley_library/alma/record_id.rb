@@ -22,6 +22,9 @@ module BerkeleyLibrary
         # also accepts a {RecordId} and simply returns it, so it can be used in
         # situations where it may not be clear whether the ID has already been parsed.
         #
+        # **Note:** Use the {BarCode} class for barcodes, which don't have a consistent
+        # format and hence can't be auto-detected.
+        #
         # @param id [String, RecordId] the ID to parse
         # @return [RecordId, nil] an {MMSID} or {BibNumber}, depending on the type of ID,
         #         or `nil` if the specified `id` is neither an MMS ID nor a bib number
