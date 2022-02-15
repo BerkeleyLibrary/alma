@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.2</version>
+  <numberOfRecords>1</numberOfRecords>
+  <records>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>03480cgm a2200781Mi 4500</leader>
+          <controlfield tag="001">991039354509706532</controlfield>
+          <controlfield tag="005">20210615124013.0</controlfield>
+          <controlfield tag="007">vd cvaizs</controlfield>
+          <controlfield tag="008">050601p19971996quc135            vleng d</controlfield>
+          <datafield ind1="1" ind2=" " tag="024">
+            <subfield code="a">774212007033</subfield>
+          </datafield>
+          <datafield ind1="4" ind2="2" tag="028">
+            <subfield code="a">20070</subfield>
+            <subfield code="b">Seville Pictures</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(OCoLC)613118288</subfield>
+            <subfield code="z">(OCoLC)800045975</subfield>
+            <subfield code="z">(OCoLC)811619021</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CLU)8266514-ucladb-Voyager</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(EXLNZ-01UCS_NETWORK)9912724001006531</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="040">
+            <subfield code="a">W2U</subfield>
+            <subfield code="b">eng</subfield>
+            <subfield code="c">W2U</subfield>
+            <subfield code="d">OCLCF</subfield>
+            <subfield code="d">OCLCO</subfield>
+            <subfield code="d">TOH</subfield>
+            <subfield code="d">GK8</subfield>
+            <subfield code="d">OCL</subfield>
+            <subfield code="d">OCLCQ</subfield>
+            <subfield code="d">OCLCO</subfield>
+            <subfield code="e">rda</subfield>
+            <subfield code="d">CDS</subfield>
+            <subfield code="d">OCLCA</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="041">
+            <subfield code="a">eng</subfield>
+            <subfield code="a">fre</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="043">
+            <subfield code="a">n-us---</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="044">
+            <subfield code="a">quc</subfield>
+            <subfield code="a">xxu</subfield>
+            <subfield code="a">fr</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="046">
+            <subfield code="k">1996</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="4" tag="050">
+            <subfield code="a">PN1997</subfield>
+            <subfield code="b">.L735 1997</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="b">DVD 3916</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1="0" ind2="0" tag="245">
+            <subfield code="a">Lost highway /</subfield>
+            <subfield code="c">October Films presents a CIBY 2000/Asymmetrical production ; a David Lynch film ; produced by Deepak Nayar, Tom Sternberg, Mahy Sweeney ; written by David Lynch &amp; Barry Gifford ; directed by David Lynch.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="257">
+            <subfield code="a">United States</subfield>
+            <subfield code="a">France</subfield>
+            <subfield code="2">naf</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="1" tag="264">
+            <subfield code="a">[Montreal] :</subfield>
+            <subfield code="b">Seville Pictures,</subfield>
+            <subfield code="c">1997.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 videodisc (135 min.) :</subfield>
+            <subfield code="b">sound, color ;</subfield>
+            <subfield code="c">4 3/4 in.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="336">
+            <subfield code="a">two-dimensional moving image</subfield>
+            <subfield code="b">tdi</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="337">
+            <subfield code="a">video</subfield>
+            <subfield code="b">v</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="338">
+            <subfield code="a">videodisc</subfield>
+            <subfield code="b">vd</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="344">
+            <subfield code="a">digital</subfield>
+            <subfield code="b">optical</subfield>
+            <subfield code="g">stereo</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="346">
+            <subfield code="b">NTSC</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="347">
+            <subfield code="a">video file</subfield>
+            <subfield code="b">DVD video</subfield>
+            <subfield code="e">Region 1</subfield>
+            <subfield code="2">rda</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="380">
+            <subfield code="a">Motion picture</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">Pan and scan version.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">Special features include: theatrical trailer; interactive menus; scene selection.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="500">
+            <subfield code="a">Originally released as a motion picture in 1996.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="508">
+            <subfield code="a">Music, Angelo Badalamenti ; editor, Mary Sweeney ; director of photography, Peter Deming.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="511">
+            <subfield code="a">Bill Pullman, Patricia Arquette, Balthazar Getty, Robert Blake, Natasha Gregson Wagner, Gary Busey, Robert Loggia.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="520">
+            <subfield code="a">A successful jazz musician whose marriage is on the rocks, a man in black who threatens to expose him, a young mechanic with links to a mobster, and the mobster's moll are all riders on the lost highway, trapped in their worlds of desire, destiny and unknown destination where the truth is always a short way further down the road.</subfield>
+          </datafield>
+          <datafield ind1="8" ind2=" " tag="521">
+            <subfield code="a">Canadian home video rating: R.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="538">
+            <subfield code="a">DVD, Dolby stereo; Region 1; NTSC.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="546">
+            <subfield code="a">In English or dubbed French.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="0" tag="650">
+            <subfield code="a">Jazz musicians</subfield>
+            <subfield code="z">United States</subfield>
+            <subfield code="v">Drama.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="650">
+            <subfield code="a">Jazz musicians.</subfield>
+            <subfield code="2">fast</subfield>
+            <subfield code="0">(OCoLC)fst00982205</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="651">
+            <subfield code="a">United States.</subfield>
+            <subfield code="2">fast</subfield>
+            <subfield code="0">(OCoLC)fst01204155</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Drama.</subfield>
+            <subfield code="2">fast</subfield>
+            <subfield code="0">(OCoLC)fst01423879</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Feature films.</subfield>
+            <subfield code="2">fast</subfield>
+            <subfield code="0">(OCoLC)fst01710384</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Fiction films.</subfield>
+            <subfield code="2">fast</subfield>
+            <subfield code="0">(OCoLC)fst01710264</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Feature films.</subfield>
+            <subfield code="2">lcgft</subfield>
+          </datafield>
+          <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Fiction films.</subfield>
+            <subfield code="2">lcgft</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Pullman, Bill,</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Arquette, Patricia,</subfield>
+            <subfield code="d">1968-</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Getty, Balthazar,</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Blake, Robert,</subfield>
+            <subfield code="d">1933-</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Wagner, Natasha Gregson,</subfield>
+            <subfield code="d">1970-</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Busey, Gary,</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Loggia, Robert,</subfield>
+            <subfield code="e">actor.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Nayar, Deepak.</subfield>
+            <subfield code="e">film producer.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Sternberg, Tom.</subfield>
+            <subfield code="e">film producer.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Sweeney, Mahy.</subfield>
+            <subfield code="e">film produer</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Lynch, David,</subfield>
+            <subfield code="d">1946-</subfield>
+            <subfield code="e">screenwriter,</subfield>
+            <subfield code="e">director.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="a">Gifford, Barry,</subfield>
+            <subfield code="d">1946-</subfield>
+            <subfield code="e">screenwriter.</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">Séville Pictures.</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">Asymmetrical (Firm)</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">CIBY 2000 (Firm)</subfield>
+          </datafield>
+          <datafield ind1="2" ind2=" " tag="710">
+            <subfield code="a">October Films.</subfield>
+          </datafield>
+          <datafield ind1="4" ind2="2" tag="956">
+            <subfield code="z">Credits from Internet Movie Database</subfield>
+            <subfield code="u">http://www.imdb.com/title/tt0116922/</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="968">
+            <subfield code="a">Reclvl: f Addate: 050601 Addid: SMI Moddate: 090214 Modid: MRC</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="e">GLADN151847889</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b111084751</subfield>
+            <subfield code="b">Updated: 06-14-21</subfield>
+            <subfield code="c">Created: 03-17-09</subfield>
+            <subfield code="d">CatDate: 06-01-05</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991039354509706532</subfield>
+            <subfield code="8">22725145850006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MRC</subfield>
+            <subfield code="c">Media Resources Center</subfield>
+            <subfield code="d">DVD 3916</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mc</subfield>
+            <subfield code="k">8</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Media Resources Center</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991039354509706532</recordIdentifier>
+      <recordPosition>1</recordPosition>
+    </record>
+  </records>
+  <extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+    <xb:exact>true</xb:exact>
+    <xb:responseDate>2022-02-10T12:40:32-0800</xb:responseDate>
+  </extraResponseData>
+</searchRetrieveResponse>
