@@ -31,28 +31,17 @@ require 'berkeley_library/alma'
 # ------------------------------------------------------------
 # Utility methods
 
-def sru_url_for(record_id, sru_type = nil)
-  sru_url_base = 'https://berkeley.alma.exlibrisgroup.com/view/sru/01UCS_BER?version=1.2&operation=searchRetrieve&query='
-
-  if BerkeleyLibrary::Alma::Constants::ALMA_RECORD_RE =~ record_id
-    "#{sru_url_base}alma.mms_id%3D#{record_id}"
-  elsif BerkeleyLibrary::Alma::Constants::MILLENNIUM_RECORD_RE =~ record_id
-    full_bib_number = BerkeleyLibrary::Alma::BibNumber.new(record_id).to_s
-    "#{sru_url_base}alma.local_field_996%3D#{full_bib_number}"
-  elsif sru_type.eql? 'barcode'
-    "#{sru_url_base}alma.barcode%3D#{record_id}"
-  else
-    raise ArgumentError, "Unknown record ID type: #{record_id}"
-  end
+def sru_url_for(index, value)
+  "https://berkeley.alma.exlibrisgroup.com/view/sru/01UCS_BER?version=1.2&operation=searchRetrieve&query=#{index}%3D#{value}"
 end
 
 def sru_data_path_for(record_id)
   "spec/data/#{record_id}-sru.xml"
 end
 
-def stub_sru_request(record_id, sru_type = nil)
-  sru_url = sru_url_for(record_id, sru_type)
-  marc_xml_path = sru_data_path_for(record_id)
+def stub_sru_request(index, value)
+  sru_url_ = sru_url_for(index, value)
+  marc_xml_path = sru_data_path_for(value)
 
-  stub_request(:get, sru_url).to_return(status: 200, body: File.read(marc_xml_path))
+  stub_request(:get, sru_url_).to_return(status: 200, body: File.read(marc_xml_path))
 end

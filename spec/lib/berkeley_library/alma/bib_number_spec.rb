@@ -90,7 +90,8 @@ module BerkeleyLibrary
       describe :marc_record do
         it 'returns the MARC record' do
           raw_bib_number = 'b11082434'
-          stub_sru_request(raw_bib_number)
+          full_bib_number = 'b110824349'
+          stub_sru_request('alma.local_field_996', full_bib_number)
 
           bib_number = BibNumber.new(raw_bib_number)
           marc_record = bib_number.get_marc_record

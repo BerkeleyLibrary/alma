@@ -26,7 +26,7 @@ module BerkeleyLibrary
       describe :marc_record do
         it 'returns the MARC record' do
           barcode_id = 'C084093187'
-          stub_sru_request(barcode_id, 'barcode')
+          stub_sru_request('alma.barcode', barcode_id)
 
           barcode = BerkeleyLibrary::Alma::BarCode.new(barcode_id)
           marc_record = barcode.get_marc_record
@@ -44,7 +44,7 @@ module BerkeleyLibrary
           XML
 
           barcode_id = '991054360089706532doesntexist'
-          sru_url = sru_url_for(barcode_id, 'barcode')
+          sru_url = sru_url_for('alma.barcode', barcode_id)
           stub_request(:get, sru_url).to_return(status: 200, body: empty_sru_response)
 
           barcode = BarCode.new(barcode_id)
@@ -54,7 +54,7 @@ module BerkeleyLibrary
 
         it 'returns nil for an HTTP error response' do
           barcode_id = '991054360089706532934j3h'
-          sru_url = sru_url_for(barcode_id, 'barcode')
+          sru_url = sru_url_for('alma.barcode', barcode_id)
           stub_request(:get, sru_url).to_return(status: 404)
 
           barcode = BarCode.new(barcode_id)

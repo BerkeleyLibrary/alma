@@ -58,7 +58,7 @@ module BerkeleyLibrary
       describe :marc_record do
         it 'returns the MARC record' do
           raw_mms_id = '991054360089706532'
-          stub_sru_request(raw_mms_id)
+          stub_sru_request('alma.mms_id', raw_mms_id)
 
           mms_id = MMSID.new(raw_mms_id)
           marc_record = mms_id.get_marc_record
@@ -77,7 +77,7 @@ module BerkeleyLibrary
           XML
 
           raw_mms_id = '991054360089706532'
-          sru_url = sru_url_for(raw_mms_id)
+          sru_url = sru_url_for('alma.mms_id', raw_mms_id)
           stub_request(:get, sru_url).to_return(status: 200, body: empty_sru_response)
 
           mms_id = MMSID.new(raw_mms_id)
@@ -87,7 +87,7 @@ module BerkeleyLibrary
 
         it 'returns nil for an HTTP error response' do
           raw_mms_id = '991054360089706532'
-          sru_url = sru_url_for(raw_mms_id)
+          sru_url = sru_url_for('alma.mms_id', raw_mms_id)
           stub_request(:get, sru_url).to_return(status: 404)
 
           mms_id = MMSID.new(raw_mms_id)
