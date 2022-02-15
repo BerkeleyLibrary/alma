@@ -62,17 +62,6 @@ module BerkeleyLibrary
           expect(marc_record).to be_nil
         end
       end
-
-      describe :permalink_uri do
-        it 'returns the permalink' do
-          barcode_id = 'C084093187'
-          expected_url = "https://search.library.berkeley.edu/permalink/01UCS_BER/iqob43/alma#{barcode_id}"
-
-          barcode = BarCode.new(barcode_id)
-          expected_uri = URI.parse(expected_url)
-          expect(barcode.permalink_uri).to eq(expected_uri)
-        end
-      end
     end
   end
 end

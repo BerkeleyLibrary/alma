@@ -22,19 +22,7 @@ module BerkeleyLibrary
         "alma.barcode=#{@barcode}"
       end
 
-      # Returns the permalink URI for this barcode.
-      # Requires {Config#alma_permalink_base_uri} to be set.
-      #
-      # @return [URI] the permalink URI.
-      def permalink_uri
-        URIs.append(permalink_base_uri, "alma#{barcode}")
-      end
-
       private
-
-      def permalink_base_uri
-        Config.alma_permalink_base_uri
-      end
 
       def string?(barcode)
         raise ArgumentError, "Barcode must be a string: #{barcode.inspect}" unless barcode.is_a?(String)
