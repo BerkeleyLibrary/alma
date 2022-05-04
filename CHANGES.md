@@ -1,3 +1,8 @@
+# 0.0.5 (4 May 2022)
+
+- extracts `SRU` module for performing SRU queries.
+- MARCXML parsing now uses `MARC::NokogiriReader` rather than the `REXML` default.
+
 # 0.0.4 (15 February 2022)
 
 - adds `BarCode` subclass of `RecordId`, to look up bibliographic records by
