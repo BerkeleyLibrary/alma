@@ -36,6 +36,26 @@ module BerkeleyLibrary
           end
         end
       end
+
+      describe 'SRU methods' do
+        before { Config.default! }
+        after { Config.send(:clear!) }
+
+        describe :get_marc_xml do
+          let(:record_id) { RecordId.parse('991054360089706532') }
+          let(:expected_body) { File.read('spec/data/991054360089706532-sru.xml') }
+
+          before do
+            sru_query_uri = record_id.marc_uri
+            stub_request(:get, sru_query_uri).to_return(body: expected_body)
+          end
+
+          it 'returns the MARC XML' do
+            marc_xml = record_id.get_marc_xml
+            expect(marc_xml).to eq(expected_body)
+          end
+        end
+      end
     end
   end
 end

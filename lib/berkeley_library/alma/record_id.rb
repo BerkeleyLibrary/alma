@@ -2,6 +2,7 @@ require 'berkeley_library/logging'
 require 'berkeley_library/marc'
 require 'berkeley_library/util/uris'
 require 'berkeley_library/alma/constants'
+require 'berkeley_library/alma/sru'
 
 module BerkeleyLibrary
   module Alma
@@ -47,13 +48,7 @@ module BerkeleyLibrary
       #
       # @return [URI] the MARC URI
       def marc_uri
-        query_string = URI.encode_www_form(
-          'version' => '1.2',
-          'operation' => 'searchRetrieve',
-          'query' => sru_query_value
-        )
-
-        URIs.append(Config.alma_sru_base_uri, '?', query_string)
+        SRU.sru_query_uri(sru_query_value)
       end
 
       # Makes an SRU query for this record and returns a MARC record, or nil if the
@@ -65,8 +60,12 @@ module BerkeleyLibrary
       # @return [MARC::Record, nil] the MARC record
       # rubocop:disable Naming/AccessorMethodName
       def get_marc_record
-        marc_xml = get_marc_xml
-        logger.warn("GET #{marc_uri} did not return a MARC record") unless (marc_record = parse_marc_xml(marc_xml))
+        unless (marc_reader = SRU.marc_records_for(sru_query_value))
+          logger.warn("GET #{marc_uri} did not return a MARC record")
+          return nil
+        end
+
+        logger.warn("GET #{marc_uri} did not return a MARC record") unless (marc_record = marc_reader.first)
         marc_record
       end
       # rubocop:enable Naming/AccessorMethodName
@@ -77,10 +76,7 @@ module BerkeleyLibrary
       # @return [String, nil] the SRU query response body, or nil in the event of an error.
       # rubocop:disable Naming/AccessorMethodName
       def get_marc_xml
-        URIs.get(marc_uri, headers: { user_agent: DEFAULT_USER_AGENT })
-      rescue RestClient::Exception => e
-        logger.warn("GET #{marc_uri} failed", e)
-        nil
+        SRU.make_sru_query(sru_query_value)
       end
       # rubocop:enable Naming/AccessorMethodName
 
@@ -97,19 +93,6 @@ module BerkeleyLibrary
         return unless other.is_a?(RecordId)
 
         to_s <=> other.to_s
-      end
-
-      # ------------------------------------------------------------
-      # Private methods
-
-      private
-
-      def parse_marc_xml(xml)
-        return unless xml
-
-        input = StringIO.new(xml.scrub)
-        reader = MARC::XMLReader.new(input)
-        reader.first
       end
     end
   end

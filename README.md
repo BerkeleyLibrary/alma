@@ -41,10 +41,34 @@ options to either:
 
 ## Retrieving Alma records
 
-The [`RecordId`](lib/berkeley_library/alma/record_id.rb) class encapsulates 
-an ID that can be used to look up records in Alma via 
-[SRU](https://developers.exlibrisgroup.com/alma/integrations/sru/).
-This can be either an Alma MMS ID:
+### Via `SRU`
+
+The [`SRU`](lib/berkeley_library/alma/sru.rb) module encapsulates Alma
+[SRU](https://developers.exlibrisgroup.com/alma/integrations/sru/) queries.
+
+Retrieving MARC records:
+
+```ruby
+reader = BerkeleyLibrary::Alma::SRU.get_marc_records('991005668209706532', '991005668359706532')
+# => #<MARC::XMLReader:0x0000000135b940e8 @freeze=false, @handle=#<StringIO:0x0000000135b94160>...
+```
+
+Making arbitrary SRU queries:
+
+```ruby
+BerkeleyLibrary::Alma::SRU.make_sru_query('alma.other_system_number=UCB-b123230470-01ucs_ber')
+# => "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><searchRetrieveResponse xmlns=...
+```
+
+### Via `RecordId`
+
+In addition, individual records can be retrieved from an instance of the
+[`RecordId`](lib/berkeley_library/alma/record_id.rb) class, which encapsulates
+an Alma MMS ID, Millennium bib number, or item barcode.
+
+#### Initializing `RecordID` objects
+
+Alma MMS ID:
 
 ```ruby
 mms_id_str = '991054360089706532'
@@ -52,13 +76,27 @@ record_id = BerkeleyLibrary::Alma::RecordId.parse(mms_id_str)
 # => #<BerkeleyLibrary::Alma::MMSID:0x0000000138949830 @institution="6532", @mms_id="991054360089706532", @type_prefix="99", @unique_part="105436008970">
 ```
 
-Or a Millennium bib number:
+Millennium bib number:
 
 ```ruby
 bib_number_str = 'b11082434'
 record_id = BerkeleyLibrary::Alma::RecordId.parse(bib_number_str)
 # => #<BerkeleyLibrary::Alma::BibNumber:0x0000000118815038 @check_str="9", @digit_str="11082434">
 ```
+
+Item barcode:
+
+```ruby
+barcode_str = 'C084093187'
+barcode = BerkeleyLibrary::Alma::BarCode.new(barcode_str)
+#  => #<BerkeleyLibrary::Alma::BarCode:0x000000013fac4c08 @barcode="C084093187">
+```
+
+⚠️ Note that because of the free-form nature of barcodes, they cannot be auto-detected,
+and hence are **not** supported by the `RecordId#parse` method; they must be instantiated 
+directly.
+
+#### Using `RecordId` objects to make SRU queries
 
 Given a `RecordId` object, you can get the SRU query URI for the corresponding MARC record:
 
