@@ -60,12 +60,8 @@ module BerkeleyLibrary
       # @return [MARC::Record, nil] the MARC record
       # rubocop:disable Naming/AccessorMethodName
       def get_marc_record
-        unless (marc_reader = SRU.marc_records_for(sru_query_value))
-          logger.warn("GET #{marc_uri} did not return a MARC record")
-          return nil
-        end
-
-        logger.warn("GET #{marc_uri} did not return a MARC record") unless (marc_record = marc_reader.first)
+        records = SRU.marc_records_for(sru_query_value)
+        logger.warn("GET #{marc_uri} did not return a MARC record") unless (marc_record = records.first)
         marc_record
       end
       # rubocop:enable Naming/AccessorMethodName

@@ -18,8 +18,6 @@ module BerkeleyLibrary
 
           it 'returns all MARC records' do
             reader = SRU.get_marc_records(*mms_ids)
-            expect(reader).to be_a(MARC::XMLReader)
-
             marc_records = reader.to_a
             expect(marc_records.size).to eq(mms_ids.size)
             expect(marc_records.map(&:record_id)).to contain_exactly(*mms_ids)
@@ -47,23 +45,52 @@ module BerkeleyLibrary
             ]
           end
 
-          before do
-            sru_query_value = mms_ids.map { |id| RecordId.parse(id) }.map(&:sru_query_value).join(' or ')
-            query_uri_page_1 = SRU.sru_query_uri(sru_query_value)
-            stub_request(:get, query_uri_page_1).to_return(body: File.read('spec/data/availability-sru-page-1.xml'))
+          let(:sru_query_value) { mms_ids.map { |id| RecordId.parse(id) }.map(&:sru_query_value).join(' or ') }
+          let(:query_uri_page_1) { SRU.sru_query_uri(sru_query_value) }
+          let(:query_uri_page_2) { BerkeleyLibrary::Util::URIs.append(query_uri_page_1, '&startRecord=11') }
 
-            query_uri_page_2 = BerkeleyLibrary::Util::URIs.append(query_uri_page_1, '&startRecord=11')
-            stub_request(:get, query_uri_page_2).to_return(body: File.read('spec/data/availability-sru-page-2.xml'))
+          before do
+            stub_request(:get, query_uri_page_1).to_return(body: File.read('spec/data/availability-sru-page-1.xml'))
           end
 
           it 'returns all the MARC records' do
-            reader = SRU.get_marc_records(*mms_ids)
-            expect(reader).to be_a(MARC::XMLReader)
+            stub_request(:get, query_uri_page_2).to_return(body: File.read('spec/data/availability-sru-page-2.xml'))
 
+            reader = SRU.get_marc_records(*mms_ids)
             marc_records = reader.to_a
             expect(marc_records.size).to eq(mms_ids.size)
             expect(marc_records.map(&:record_id)).to contain_exactly(*mms_ids)
           end
+
+          it 'does not freeze records by default' do
+            stub_request(:get, query_uri_page_2).to_return(body: File.read('spec/data/availability-sru-page-2.xml'))
+
+            reader = SRU.get_marc_records(*mms_ids)
+            reader.to_a.each do |record|
+              expect(record.frozen?).to eq(false)
+            end
+          end
+
+          it 'can freeze records' do
+            stub_request(:get, query_uri_page_2).to_return(body: File.read('spec/data/availability-sru-page-2.xml'))
+
+            reader = SRU.get_marc_records(*mms_ids, freeze: true)
+            reader.to_a.each do |record|
+              expect(record.frozen?).to eq(true)
+            end
+          end
+
+          it 'is lazy' do
+            reader = SRU.get_marc_records(*mms_ids)
+            marc_records = reader.take(10).to_a
+            expect(marc_records.size).to eq(10)
+            retrieved_ids = marc_records.map(&:record_id).uniq
+            expect(retrieved_ids.size).to eq(10)
+
+            # order is not guaranteed, so we don't necessarily get the first 10
+            retrieved_ids.each { |id| expect(mms_ids).to include(id) }
+          end
+
         end
       end
     end

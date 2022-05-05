@@ -16,6 +16,13 @@ module BerkeleyLibrary
           expect(records.map(&:record_id)).to eq(expected_ids)
         end
 
+        describe :new do
+          it 'raises an error for unreadable sources' do
+            not_xml = Object.new
+            expect { XMLReader.read(not_xml) }.to raise_error(ArgumentError)
+          end
+        end
+
         describe :num_records do
           it 'returns the <numberOfRecords/> value' do
             reader.first # make sure we've gotten far enough in the doc to parse

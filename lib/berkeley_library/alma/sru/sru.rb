@@ -1,8 +1,9 @@
 require 'uri'
+require 'berkeley_library/util/uris'
 require 'berkeley_library/alma/config'
 require 'berkeley_library/alma/constants'
 require 'berkeley_library/alma/record_id'
-require 'berkeley_library/util/uris'
+require 'berkeley_library/alma/sru/xml_reader'
 
 module BerkeleyLibrary
   module Alma
@@ -15,17 +16,18 @@ module BerkeleyLibrary
       end
 
       # Given a list of record IDs, returns the MARC records for each ID (if found).
+      # Note that the order of the records is not guaranteed.
       #
       # @param record_ids [Array<String, RecordId>] the record IDs to look up
-      # @return [MARC::XMLReader, nil] a reader for the MARC records, or nil if
-      #   the records could not be read
-      def get_marc_records(*record_ids)
+      # @param freeze [Boolean] whether to freeze the records
+      # @return [Enumerator::Lazy<MARC::Record>] the records
+      def get_marc_records(*record_ids, freeze: false)
         # noinspection RubyMismatchedReturnType
         parsed_ids = record_ids.filter_map { |id| RecordId.parse(id) }
         raise ArgumentError, "Argument #{record_ids.inspect} contain no valid record IDs" if parsed_ids.empty?
 
         sru_query_value = parsed_ids.map(&:sru_query_value).join(' or ')
-        SRU.marc_records_for(sru_query_value)
+        SRU.marc_records_for(sru_query_value, freeze: freeze)
       end
 
       # Returns a URI for retrieving records for the specified query
@@ -56,19 +58,40 @@ module BerkeleyLibrary
       # as MARC records.
       #
       # @param query_value [String] the value of the SRU query parameter
-      # @return [MARC::XMLReader, nil] a reader for the MARC records, or nil if
-      #   the records could not be read
-      def marc_records_for(query_value)
-        return unless (xml = make_sru_query(query_value))
-
-        input = StringIO.new(xml.scrub)
-        MARC::XMLReader.new(input, parser: 'nokogiri')
+      # @param freeze [Boolean] whether to freeze the records
+      # @return [Enumerator::Lazy<MARC::Record>] the records
+      def marc_records_for(query_value, freeze: false)
+        Enumerator.new do |y|
+          uri = sru_query_uri(query_value)
+          perform_query(uri, freeze: freeze) { |rec| y << rec }
+        end.lazy
       end
 
       private
 
+      def perform_query(query_uri, start_record: nil, freeze: false, &block)
+        full_query_uri = full_query_uri_for(query_uri, start_record)
+        next_start_record = perform_single_query(full_query_uri, freeze, &block)
+        return unless next_start_record
+
+        perform_query(query_uri, start_record: next_start_record, freeze: freeze, &block)
+      end
+
+      def full_query_uri_for(query_uri, start_record)
+        return query_uri unless start_record
+
+        BerkeleyLibrary::Util::URIs.append(query_uri, "&startRecord=#{start_record}")
+      end
+
+      def perform_single_query(query_uri, freeze, &block)
+        return unless (xml = do_get(query_uri))
+
+        xml_reader = XMLReader.read(xml, freeze: freeze)
+        xml_reader.each(&block)
+        xml_reader.next_record_position
+      end
+
       def do_get(uri)
-        # TODO: can we get the XML as an IO rather than as a string?
         Util::URIs.get(uri, headers: { user_agent: DEFAULT_USER_AGENT })
       rescue RestClient::Exception => e
         logger.warn("GET #{uri} failed", e)
