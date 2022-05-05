@@ -1,3 +1,7 @@
+# 0.0.6 (5 May 2022)
+
+- `SRU#get_marc_records` now supports paginated results. 
+
 # 0.0.5 (4 May 2022)
 
 - extracts `SRU` module for performing SRU queries.

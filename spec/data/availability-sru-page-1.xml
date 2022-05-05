@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.2</version>
+  <numberOfRecords>15</numberOfRecords>
+  <records>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00428nam a2200133 a 4500</leader>
+          <controlfield tag="001">991005930379706532</controlfield>
+          <controlfield tag="005">20210806165753.0</controlfield>
+          <controlfield tag="008">210712s2013####xx######r#####000#0#eng#d</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b207863441-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="099">
+            <subfield code="a">no call number</subfield>
+            <subfield code="9">local</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Friedlaender, Johnny,</subfield>
+            <subfield code="d">1912-1992</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Avril</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 etching :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b207863441</subfield>
+            <subfield code="b">Updated: 09-23-16</subfield>
+            <subfield code="c">Created: 11-22-13</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">local</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991005930379706532</subfield>
+            <subfield code="8">22881693350006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">unavailable</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">1</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991005930379706532</recordIdentifier>
+      <recordPosition>1</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00343nam a2200097 a 4500</leader>
+          <controlfield tag="001">991008364649706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b213513225-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Wang, Gai.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Bee and flowering plant</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 woodblock print :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1="0" ind2=" " tag="740">
+            <subfield code="a">Mustard seed garden painting manual</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b213513225</subfield>
+            <subfield code="b">Updated: 09-19-17</subfield>
+            <subfield code="c">Created: 06-05-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991008364649706532</subfield>
+            <subfield code="8">22833839790006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991008364649706532</recordIdentifier>
+      <recordPosition>2</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00307nam a2200085 a 4500</leader>
+          <controlfield tag="001">991005668359706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b207766733-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Fukazawa, Yukio,</subfield>
+            <subfield code="d">1924-2017.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Blue Doors</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 relief etching and aquatint :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b207766733</subfield>
+            <subfield code="b">Updated: 01-09-19</subfield>
+            <subfield code="c">Created: 11-01-13</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991005668359706532</subfield>
+            <subfield code="8">22928381510006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">unavailable</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">1</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991005668359706532</recordIdentifier>
+      <recordPosition>3</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00336nam a2200097 a 4500</leader>
+          <controlfield tag="001">991005931249706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b207863660-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="099">
+            <subfield code="a">no call number</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Debenjak, Riko,</subfield>
+            <subfield code="d">1908-1987</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Cycle composition no. 5</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 etching :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b207863660</subfield>
+            <subfield code="b">Updated: 11-05-19</subfield>
+            <subfield code="c">Created: 11-22-13</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991005931249706532</subfield>
+            <subfield code="8">22977842550006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991005931249706532</recordIdentifier>
+      <recordPosition>4</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00342nam a2200097 a 4500</leader>
+          <controlfield tag="001">991008401919706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b21352305x-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Wang, Gai.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Dragonfly with plants</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 woodblock print :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1="0" ind2=" " tag="740">
+            <subfield code="a">Mustard seed garden painting manual</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b21352305x</subfield>
+            <subfield code="b">Updated: 09-19-17</subfield>
+            <subfield code="c">Created: 06-06-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991008401919706532</subfield>
+            <subfield code="8">22953716380006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991008401919706532</recordIdentifier>
+      <recordPosition>5</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00306nam a2200085 a 4500</leader>
+          <controlfield tag="001">991007902439706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b212656144-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">De Chirico, Giorgio,</subfield>
+            <subfield code="d">1888-1978.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Il Cavaliere Solitario</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 lithograph :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b212656144</subfield>
+            <subfield code="b">Updated: 02-20-19</subfield>
+            <subfield code="c">Created: 05-01-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991007902439706532</subfield>
+            <subfield code="8">22702044740006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991007902439706532</recordIdentifier>
+      <recordPosition>6</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00272nam a2200085 a 4500</leader>
+          <controlfield tag="001">991008718379706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b214199137-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Johnston, Ynez</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Monsoon</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 art piece :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b214199137</subfield>
+            <subfield code="b">Updated: 07-09-14</subfield>
+            <subfield code="c">Created: 07-09-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991008718379706532</subfield>
+            <subfield code="8">22751267480006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991008718379706532</recordIdentifier>
+      <recordPosition>7</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00302nam a2200085 a 4500</leader>
+          <controlfield tag="001">991007903029706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b212656302-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Yamaguchi, Susumu,</subfield>
+            <subfield code="d">1895-1976</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Mt. Hotaka at Daybreak</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 art piece :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b212656302</subfield>
+            <subfield code="b">Updated: 05-01-14</subfield>
+            <subfield code="c">Created: 05-01-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991007903029706532</subfield>
+            <subfield code="8">22700933340006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991007903029706532</recordIdentifier>
+      <recordPosition>8</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00296nam a2200085 a 4500</leader>
+          <controlfield tag="001">991009071149706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b214750917-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Blake, Paul,</subfield>
+            <subfield code="d">1945-</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">One who called now follows</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 serigraph :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b214750917</subfield>
+            <subfield code="b">Updated: 04-22-19</subfield>
+            <subfield code="c">Created: 08-11-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991009071149706532</subfield>
+            <subfield code="8">22789889770006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991009071149706532</recordIdentifier>
+      <recordPosition>9</recordPosition>
+    </record>
+    <record>
+      <recordSchema>marcxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="http://www.loc.gov/MARC21/slim">
+          <leader>00267nam a2200085 a 4500</leader>
+          <controlfield tag="001">991007853589706532</controlfield>
+          <controlfield tag="008">^^</controlfield>
+          <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(CUY)UCB-b212643551-01ucs_ber</subfield>
+          </datafield>
+          <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="a">Wise, Judy.</subfield>
+          </datafield>
+          <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Poppies</subfield>
+            <subfield code="h">[graphic]</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">1 etching :</subfield>
+            <subfield code="b">col.</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="996">
+            <subfield code="a">b212643551</subfield>
+            <subfield code="b">Updated: 10-21-14</subfield>
+            <subfield code="c">Created: 04-29-14</subfield>
+            <subfield code="d">CatDate:   -  -</subfield>
+            <subfield code="9">LOCAL</subfield>
+          </datafield>
+          <datafield ind1=" " ind2=" " tag="AVA">
+            <subfield code="0">991007853589706532</subfield>
+            <subfield code="8">22691822150006532</subfield>
+            <subfield code="a">01UCS_BER</subfield>
+            <subfield code="b">MORR</subfield>
+            <subfield code="c">Morrison</subfield>
+            <subfield code="e">available</subfield>
+            <subfield code="f">1</subfield>
+            <subfield code="g">0</subfield>
+            <subfield code="i">UCB_Campus</subfield>
+            <subfield code="j">mo</subfield>
+            <subfield code="k">#</subfield>
+            <subfield code="p">1</subfield>
+            <subfield code="q">Morrison Library</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordIdentifier>991007853589706532</recordIdentifier>
+      <recordPosition>10</recordPosition>
+    </record>
+  </records>
+  <nextRecordPosition>11</nextRecordPosition>
+  <extraResponseData xmlns:xb="http://www.exlibris.com/repository/search/xmlbeans/">
+    <xb:exact>true</xb:exact>
+    <xb:responseDate>2022-05-05T12:52:41-0700</xb:responseDate>
+  </extraResponseData>
+</searchRetrieveResponse>
