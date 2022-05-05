@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'berkeley_library-logging', '~> 0.2'
   spec.add_dependency 'berkeley_library-marc', '~> 0.3.1'
-  spec.add_dependency 'berkeley_library-util', '~> 0.1', '>= 0.1.1'
+  spec.add_dependency 'berkeley_library-util', '~> 0.1', '>= 0.1.2'
   spec.add_dependency 'nokogiri', '~> 1.12'
 
   spec.add_development_dependency 'bundle-audit', '~> 0.1'
