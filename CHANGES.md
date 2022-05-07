@@ -1,3 +1,10 @@
+# 0.0.7 (6 May 2022)
+
+- `SRU#get_marc_records` now accepts a `max_records` parameter corresponding to the SRU
+  `maximumRecords` query parameter for page size.
+- `BerkeleyLibrary::Alma::Config.default!` now returns the `Config` singleton rather than
+  an arbitrary config value.
+
 # 0.0.6 (5 May 2022)
 
 - `SRU#get_marc_records` now supports paginated results. 
