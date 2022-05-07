@@ -48,7 +48,7 @@ module BerkeleyLibrary
       #
       # @return [URI] the MARC URI
       def marc_uri
-        SRU.sru_query_uri(sru_query_value)
+        SRU.sru_query_uri(sru_query_value, max_records: 1)
       end
 
       # Makes an SRU query for this record and returns a MARC record, or nil if the
@@ -60,7 +60,7 @@ module BerkeleyLibrary
       # @return [MARC::Record, nil] the MARC record
       # rubocop:disable Naming/AccessorMethodName
       def get_marc_record
-        records = SRU.marc_records_for(sru_query_value)
+        records = SRU.marc_records_for(sru_query_value, max_records: 1)
         logger.warn("GET #{marc_uri} did not return a MARC record") unless (marc_record = records.first)
         marc_record
       end
@@ -72,7 +72,7 @@ module BerkeleyLibrary
       # @return [String, nil] the SRU query response body, or nil in the event of an error.
       # rubocop:disable Naming/AccessorMethodName
       def get_marc_xml
-        SRU.make_sru_query(sru_query_value)
+        SRU.make_sru_query(sru_query_value, max_records: 1)
       end
       # rubocop:enable Naming/AccessorMethodName
 

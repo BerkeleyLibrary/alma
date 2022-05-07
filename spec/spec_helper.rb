@@ -31,17 +31,17 @@ require 'berkeley_library/alma'
 # ------------------------------------------------------------
 # Utility methods
 
-def sru_url_for(index, value)
-  "https://berkeley.alma.exlibrisgroup.com/view/sru/01UCS_BER?version=1.2&operation=searchRetrieve&query=#{index}%3D#{value}"
+def sru_url_for(index, value, max_records: 1)
+  "https://berkeley.alma.exlibrisgroup.com/view/sru/01UCS_BER?version=1.2&operation=searchRetrieve&query=#{index}%3D#{value}&maximumRecords=#{max_records}"
 end
 
 def sru_data_path_for(record_id)
   "spec/data/#{record_id}-sru.xml"
 end
 
-def stub_sru_request(index, value)
-  sru_url_ = sru_url_for(index, value)
+def stub_sru_request(index, value, max_records: 1)
+  sru_url = sru_url_for(index, value, max_records: max_records)
   marc_xml_path = sru_data_path_for(value)
 
-  stub_request(:get, sru_url_).to_return(status: 200, body: File.read(marc_xml_path))
+  stub_request(:get, sru_url).to_return(status: 200, body: File.read(marc_xml_path))
 end

@@ -45,7 +45,6 @@
     <orderEntry type="library" scope="PROVIDED" name="method_source (v1.0.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.4.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2022.0105, RVM: ruby-2.7.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.8.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.15.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="netrc (v0.11.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.13.5, RVM: ruby-2.7.5) [gem]" level="application" />
