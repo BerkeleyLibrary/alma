@@ -1,3 +1,8 @@
+# 0.0.7.1 (24 May 2022)
+
+- Set minimum Nokogiri version to address
+  [CVE-2022-29181](https://nvd.nist.gov/vuln/detail/CVE-2022-29181)
+
 # 0.0.7 (6 May 2022)
 
 - `SRU#get_marc_records` now accepts a `max_records` parameter corresponding to the SRU
