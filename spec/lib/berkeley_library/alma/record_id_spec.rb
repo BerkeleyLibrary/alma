@@ -39,6 +39,7 @@ module BerkeleyLibrary
 
       describe 'SRU methods' do
         before { Config.default! }
+
         after { Config.send(:clear!) }
 
         describe :get_marc_xml do

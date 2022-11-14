@@ -3,7 +3,7 @@ require 'spec_helper'
 module BerkeleyLibrary
   module Alma
     describe BibNumber do
-      before(:each) do
+      before do
         BerkeleyLibrary::Alma.configure do
           Config.alma_sru_host = 'berkeley.alma.exlibrisgroup.com'
           Config.alma_institution_code = '01UCS_BER'
@@ -12,7 +12,7 @@ module BerkeleyLibrary
         end
       end
 
-      after(:each) do
+      after do
         BerkeleyLibrary::Alma::Config.send(:clear!)
       end
 

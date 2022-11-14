@@ -6,7 +6,7 @@ module BerkeleyLibrary
   module Alma
     describe Config do
 
-      after(:each) do
+      after do
         Config.send(:clear!)
       end
 
@@ -52,7 +52,7 @@ module BerkeleyLibrary
       describe 'with Rails config' do
         attr_reader :rails_config
 
-        before(:each) do
+        before do
           @rails_config = Class.new do
             attr_accessor :alma_sru_host, :alma_institution_code
           end.new
@@ -66,7 +66,7 @@ module BerkeleyLibrary
           Object.const_set(:Rails, rails)
         end
 
-        after(:each) do
+        after do
           Object.send(:remove_const, :Rails)
         end
 

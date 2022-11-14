@@ -1,0 +1,4 @@
+inherit_from: ../.rubocop.yml
+
+require:
+  - rubocop-rake

@@ -15,8 +15,8 @@ RSpec.configure do |config|
   config.color = true
   config.tty = true
   config.formatter = :documentation
-  config.before(:each) { WebMock.disable_net_connect!(allow_localhost: true) }
-  config.after(:each) { WebMock.allow_net_connect! }
+  config.before { WebMock.disable_net_connect!(allow_localhost: true) }
+  config.after { WebMock.allow_net_connect! }
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end

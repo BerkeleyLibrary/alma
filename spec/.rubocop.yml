@@ -1,5 +1,8 @@
 inherit_from: ../.rubocop.yml
 
+require:
+  - rubocop-rspec
+
 AllCops:
   # Exclude generated files
   Exclude:
@@ -35,3 +38,89 @@ Metrics/MethodLength:
 # Sometimes we're testing the operator
 Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: false
+
+############################################################
+# rubocop-rspec
+
+# believe me, it wasn't by choice
+RSpec/AnyInstance:
+  Enabled: false
+
+# we meant to do that
+RSpec/BeforeAfterAll:
+  Enabled: false
+
+# more words != more readable
+RSpec/ContextWording:
+  Enabled: false
+
+# explicit >>> implicit
+RSpec/DescribedClass:
+  Enabled: false
+
+# more punctuation != more readable
+RSpec/DescribeSymbol:
+  Enabled: false
+
+# setup cost / time >>> failure granularity
+RSpec/ExampleLength:
+  Max: 15
+  CountAsOne:
+    - array
+    - hash
+    - heredoc
+
+# we meant to do that
+RSpec/ExpectInHook:
+  Enabled: false
+
+# your naming scheme is not in possession of all the facts
+RSpec/FilePath:
+  Enabled: false
+
+# explicit >>> implicit
+RSpec/InstanceVariable:
+  Enabled: false
+
+# maybe when 'all' has a corresponding 'none' matcher
+RSpec/IteratedExpectation:
+  Enabled: false
+
+# we meant to do that
+RSpec/MessageSpies:
+  Enabled: false
+
+# too late now
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+# setup cost / time >>> failure granularity
+RSpec/MultipleExpectations:
+  Enabled: false
+
+# cure is worse than the disease
+RSpec/NestedGroups:
+  Enabled: false
+
+# more quotation marks != more readable
+RSpec/SharedExamples:
+  Enabled: false
+
+# we meant to do that
+RSpec/StubbedMock:
+  Enabled: false
+
+# we meant to do that
+RSpec/VerifiedDoubles:
+  Enabled: false
+
+############################################################
+# rubocop-rspec
+
+# enable newer rubocop-rspec cops
+
+RSpec/IdenticalEqualityAssertion: # new in 2.4
+  Enabled: true
+
+RSpec/Rails/AvoidSetupHook: # new in 2.4
+  Enabled: true

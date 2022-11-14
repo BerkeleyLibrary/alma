@@ -4,6 +4,7 @@ module BerkeleyLibrary
   module Alma
     describe SRU do
       before { Config.default! }
+
       after { Config.send(:clear!) }
 
       describe :get_marc_records do
