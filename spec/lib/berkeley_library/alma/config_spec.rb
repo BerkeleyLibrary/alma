@@ -53,7 +53,9 @@ module BerkeleyLibrary
         attr_reader :rails_config
 
         before(:each) do
-          @rails_config = OpenStruct.new
+          @rails_config = Class.new do
+            attr_accessor :alma_sru_host, :alma_institution_code
+          end.new
 
           application = double(Object)
           allow(application).to receive(:config).and_return(rails_config)

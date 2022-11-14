@@ -328,7 +328,162 @@ Style/SwapValues: # (new in 1.1)
 ############################################################
 # Added in RuboCop 1.10
 
-Gemspec/DateAssignment: # (new in 1.10)
-  Enabled: true
 Style/HashConversion: # (new in 1.10)
   Enabled: true
+
+############################################################
+# Added in RuboCop 1.12
+
+Style/StringChars: # (new in 1.12)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.16
+
+Lint/EmptyInPattern: # (new in 1.16)
+  Enabled: true
+Style/InPatternThen: # (new in 1.16)
+  Enabled: true
+Style/MultilineInPatternThen: # (new in 1.16)
+  Enabled: true
+Style/QuotedSymbols: # (new in 1.16)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.18
+
+Layout/LineEndStringConcatenationIndentation: # (new in 1.18)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.19
+
+Lint/AmbiguousRange: # (new in 1.19)
+  Enabled: true
+Style/RedundantSelfAssignmentBranch: # (new in 1.19)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.21
+
+Lint/AmbiguousOperatorPrecedence: # (new in 1.21)
+  Enabled: true
+Lint/IncompatibleIoSelectWithFiberScheduler: # (new in 1.21)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.22
+
+Lint/RequireRelativeSelfPath: # (new in 1.22)
+  Enabled: true
+Security/IoMethods: # (new in 1.22)
+  Enabled: true
+Style/NumberedParameters: # (new in 1.22)
+  Enabled: true
+Style/NumberedParametersLimit: # (new in 1.22)
+  Enabled: true
+Style/SelectByRegexp: # (new in 1.22)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.23
+
+Gemspec/RequireMFA: # (new in 1.23)
+  Enabled: true
+Lint/UselessRuby2Keywords: # (new in 1.23)
+  Enabled: true
+Style/OpenStructUse: # (new in 1.23)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.24
+
+Naming/BlockForwarding: # (new in 1.24)
+  Enabled: true
+Style/FileRead: # (new in 1.24)
+  Enabled: true
+Style/FileWrite: # (new in 1.24)
+  Enabled: true
+Style/MapToHash: # (new in 1.24)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.26
+
+Style/NestedFileDirname: # (new in 1.26)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.27
+
+Lint/RefinementImportMethods: # (new in 1.27)
+  Enabled: true
+Style/RedundantInitialize: # (new in 1.27)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.28
+
+Security/CompoundHash: # (new in 1.28)
+  Enabled: true
+Style/FetchEnvVar: # (new in 1.28)
+  Enabled: true
+Style/ObjectThen: # (new in 1.28)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.29
+
+Style/EnvHome: # (new in 1.29)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.30
+
+Gemspec/DeprecatedAttributeAssignment: # (new in 1.30)
+  Enabled: true
+Style/MapCompactWithConditionalBlock: # (new in 1.30)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.31
+
+Layout/LineContinuationLeadingSpace: # (new in 1.31)
+  Enabled: true
+Layout/LineContinuationSpacing: # (new in 1.31)
+  Enabled: true
+Lint/ConstantOverwrittenInRescue: # (new in 1.31)
+  Enabled: true
+Lint/NonAtomicFileOperation: # (new in 1.31)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.32
+
+Lint/RequireRangeParentheses: # (new in 1.32)
+  Enabled: true
+Style/EmptyHeredoc: # (new in 1.32)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.35
+
+Style/MagicCommentFormat: # (new in 1.35)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.37
+
+Lint/DuplicateMagicComment: # (new in 1.37)
+  Enabled: true
+Style/OperatorMethodCall: # (new in 1.37)
+  Enabled: true
+Style/RedundantStringEscape: # (new in 1.37)
+  Enabled: true
+
+############################################################
+# Added in RuboCop 1.38
+
+Style/RedundantEach: # (new in 1.38)
+  Enabled: true
+
