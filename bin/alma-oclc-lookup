@@ -1,0 +1,78 @@
+#!/usr/bin/env ruby
+
+# ------------------------------------------------------------
+# Global setup
+
+# Don't buffer stdout or stderr
+$stdout.sync = true
+$stderr.sync = true
+
+# ------------------------------------------------------------
+# Dependencies
+
+# Require gems
+require 'bundler/setup'
+
+# Require lib directory
+unless $LOAD_PATH.include?((lib_path = File.expand_path('../lib', __dir__)))
+  puts "Adding #{lib_path} to $LOAD_PATH"
+  $LOAD_PATH.unshift(lib_path)
+end
+
+require 'berkeley_library/alma'
+require 'marc/spec'
+
+# ------------------------------------------------------------
+# Configuration
+
+# Configure Alma URLs etc.
+BerkeleyLibrary::Alma::Config.default!
+
+# Configure logging
+logger = BerkeleyLibrary::Logging::Loggers.new_readable_logger($stderr)
+logger.level = Logger::Severity::WARN
+BerkeleyLibrary::Logging.logger = logger
+
+# ------------------------------------------------------------
+# Constants
+
+OCLC_NUM_RE = /(?<=\(OCoLC\))(?<num>\d+)/.freeze
+
+# ------------------------------------------------------------
+# Utility methods
+
+# Read raw IDs from  STDIN
+def raw_ids
+  @raw_ids ||= Enumerator.new do |y|
+    $stdin.each_line(chomp: true) do |ln|
+      y << ln.strip
+    end
+  end
+end
+
+def ids_035a_for(record_id)
+  return unless record_id
+  return unless (marc_record = record_id.get_marc_record)
+
+  MARC::Spec.find('035$a', marc_record)
+end
+
+def oclc_nums_for(record_id)
+  return [] unless (ids_035a = ids_035a_for(record_id))
+
+  ids_035a.filter_map do |sf_035a|
+    next unless (val = sf_035a.value)
+    next unless (md = OCLC_NUM_RE.match(val))
+
+    md[:num]
+  end
+end
+
+# ------------------------------------------------------------
+# Main program
+
+raw_ids.each do |raw_id|
+  record_id = BerkeleyLibrary::Alma::RecordId.parse(raw_id)
+  oclc_nums = oclc_nums_for(record_id)
+  puts [raw_id, *oclc_nums].join("\t")
+end

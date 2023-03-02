@@ -1,3 +1,7 @@
+# (next)
+
+- Add `alma-oclc-lookup` script.
+
 # 0.0.7.1 (24 May 2022)
 
 - Set minimum Nokogiri version to address

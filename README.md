@@ -263,3 +263,26 @@ b1234
 9912348245906531	9912348245906531	
 b110824349	b110824349	991038544199706532
 ```
+
+
+### `alma-oclc-lookup`: 035$a OCLC number lookup
+
+The `alma-oclc-lookup` script takes one ore more record IDs (either Millennium bib
+numbers or Alma MMS IDs) and attempts to read the corresponding MARC records via
+[SRU](https://developers.exlibrisgroup.com/alma/integrations/sru/) and extract
+the OCLC number(s) from the 035$a field.
+
+#### Output format
+
+The output is tab-separated, in the form
+
+```none
+<record ID>	<OCLC number(s)…>
+```
+
+E.g.
+
+```none
+$ echo '991051353589706532' | bin/alma-oclc-lookup                                                                                        ✹ ✚main ‹ruby-2.7.5›
+991051353589706532      1097551039
+```
