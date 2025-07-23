@@ -1,4 +1,4 @@
-# 0.1.0 (23 July 2025)
+# 0.1.1 (23 July 2025)
 
 - Update to support Ruby 3.3+.
 - Update Rubocop & style changes.

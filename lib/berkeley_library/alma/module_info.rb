@@ -7,7 +7,7 @@ module BerkeleyLibrary
       SUMMARY = 'Alma/Primo utilities for the UC Berkeley Library'.freeze
       DESCRIPTION = 'A gem providing Alma/Primo-related utility code for the UC Berkeley Library'.freeze
       LICENSE = 'MIT'.freeze
-      VERSION = '0.1.0'.freeze
+      VERSION = '0.1.1'.freeze
       HOMEPAGE = 'https://github.com/BerkeleyLibrary/alma'.freeze
     end
   end
