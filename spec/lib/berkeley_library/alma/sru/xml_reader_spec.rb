@@ -18,7 +18,7 @@ module BerkeleyLibrary
 
         describe :new do
           it 'raises an error for unreadable sources' do
-            not_xml = Object.new
+            not_xml = 'string'
             expect { XMLReader.read(not_xml) }.to raise_error(ArgumentError)
           end
         end
