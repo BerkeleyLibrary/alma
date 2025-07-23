@@ -26,5 +26,5 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: artifacts
+          name: artifacts-${{ matrix.ruby }}-${{ matrix.os }}
           path: artifacts/**
