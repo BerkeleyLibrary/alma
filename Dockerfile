@@ -52,4 +52,4 @@ COPY --from=development /usr/local/bundle /usr/local/bundle
 RUN bundle config set deployment 'true'
 RUN bundle install --local --path=/usr/local/bundle
 
-CMD ['bundle', 'exec', 'rake']
+CMD ["bundle", "exec", "rake"]
