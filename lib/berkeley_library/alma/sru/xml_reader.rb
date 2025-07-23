@@ -110,7 +110,7 @@ module BerkeleyLibrary
         # @see Nokogiri::XML::Sax::Document#characters
         # rubocop:disable Metrics/MethodLength
         def characters(string)
-          return super unless NS_SRW == @current_element_ns
+          return super unless @current_element_ns == NS_SRW
           return unless (name = @current_element_name)
 
           case name

@@ -21,7 +21,7 @@ module BerkeleyLibrary
             reader = SRU.get_marc_records(*mms_ids)
             marc_records = reader.to_a
             expect(marc_records.size).to eq(mms_ids.size)
-            expect(marc_records.map(&:record_id)).to contain_exactly(*mms_ids)
+            expect(marc_records.map(&:record_id)).to match_array(mms_ids)
           end
         end
 
@@ -60,7 +60,7 @@ module BerkeleyLibrary
             reader = SRU.get_marc_records(*mms_ids)
             marc_records = reader.to_a
             expect(marc_records.size).to eq(mms_ids.size)
-            expect(marc_records.map(&:record_id)).to contain_exactly(*mms_ids)
+            expect(marc_records.map(&:record_id)).to match_array(mms_ids)
           end
 
           it 'does not freeze records by default' do
@@ -68,7 +68,7 @@ module BerkeleyLibrary
 
             reader = SRU.get_marc_records(*mms_ids)
             reader.to_a.each do |record|
-              expect(record.frozen?).to eq(false)
+              expect(record.frozen?).to be(false)
             end
           end
 
@@ -77,7 +77,7 @@ module BerkeleyLibrary
 
             reader = SRU.get_marc_records(*mms_ids, freeze: true)
             reader.to_a.each do |record|
-              expect(record.frozen?).to eq(true)
+              expect(record.frozen?).to be(true)
             end
           end
 

@@ -1,5 +1,7 @@
-# (next)
+# 0.1.0 (23 July 2025)
 
+- Update to support Ruby 3.3+.
+- Update Rubocop & style changes.
 - Add `alma-oclc-lookup` script.
 
 # 0.0.7.1 (24 May 2022)

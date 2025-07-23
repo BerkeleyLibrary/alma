@@ -36,7 +36,8 @@ module BerkeleyLibrary
           return id if id.is_a?(RecordId)
 
           return MMSID.new(id) if ALMA_RECORD_RE =~ id
-          return BibNumber.new(id) if MILLENNIUM_RECORD_RE =~ id
+
+          BibNumber.new(id) if MILLENNIUM_RECORD_RE =~ id
         end
       end
 

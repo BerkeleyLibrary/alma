@@ -1,7 +1,7 @@
 # =============================================================================
 # Target: base
 
-FROM ruby:2.7.5-alpine AS base
+FROM ruby:3.3-alpine AS base
 
 RUN apk --no-cache --update upgrade && \
     apk --no-cache add \
@@ -12,6 +12,7 @@ RUN apk --no-cache --update upgrade && \
         openssl \
         tzdata \
         xz-libs \
+        yaml-dev \
     && rm -rf /var/cache/apk/*
 
 WORKDIR /opt/app
@@ -51,4 +52,4 @@ COPY --from=development /usr/local/bundle /usr/local/bundle
 RUN bundle config set deployment 'true'
 RUN bundle install --local --path=/usr/local/bundle
 
-CMD ['bundle', 'exec', 'rake']
+CMD ["bundle", "exec", "rake"]
