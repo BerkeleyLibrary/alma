@@ -67,7 +67,7 @@ module BerkeleyLibrary
         end
 
         after do
-          Object.send(:remove_const, :Rails)
+          Object.send(:remove_const, :Rails) # rubocop:disable RSpec/RemoveConst
         end
 
         describe :alma_sru_base_uri do
